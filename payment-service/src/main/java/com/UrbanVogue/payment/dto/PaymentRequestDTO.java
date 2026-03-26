@@ -1,7 +1,10 @@
 package com.UrbanVogue.payment.dto;
 
 import jakarta.validation.constraints.Min;
-import jakarta.validation.constraints.NotNull;public class PaymentRequestDTO {
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+
+public class PaymentRequestDTO {
     @NotNull(message = "Order ID cannot be null")
     private Long orderId;
 
